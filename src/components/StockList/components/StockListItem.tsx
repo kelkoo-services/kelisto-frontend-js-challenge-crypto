@@ -4,7 +4,7 @@ import styled, { DefaultTheme, useTheme } from "styled-components";
 import { Stock } from "../../../types/stock";
 import { CurrencyFormatter } from "../../../utils/currencyFormatter";
 import { toSignedPercentage } from "../../../utils/toSignedPercentage";
-import { getCryptoLogoUrl } from "../../../utils/getCryptoLogoUrl";
+import { getCryptoLogoUrl } from "../../../api/cryptoIconApi";
 
 /**
  * Props for the {@link StockListItem} component

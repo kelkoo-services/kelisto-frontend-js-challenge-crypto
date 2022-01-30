@@ -37,7 +37,7 @@ const NavBar: Function = () => {
     {
       icon: 'k-icon-refresh',
       label: 'Refresh',
-      path: '/refresh',
+      path: '/',
     },
     {
       icon: 'k-icon-settings',

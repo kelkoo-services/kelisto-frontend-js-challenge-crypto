@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 import { Stock } from "../../types/stock";
 import { DashboardHeader } from ".";
@@ -24,8 +25,11 @@ const DashboardDetailsWrapper = styled.div`
  * @see {@link StockList}
  */
 const Dashboard: Function = () => {
+  const history = useHistory();
+  const [stocks, setStocks] = useState<Stock[]>([]);
 
-  const stocks: Stock[] = getStockSummary();
+  getStockSummary()
+    .then(res => setStocks(res));
 
   return (
     <PageWrapper>
@@ -37,7 +41,7 @@ const Dashboard: Function = () => {
       >
         <DashboardDetailsWrapper>
           <StockList stocks={stocks} />
-          <Button label={'Show all transactions'} />
+          <Button label={'Show all transactions'} onClick={() => history.push('/transactions')}/>
         </DashboardDetailsWrapper>
       </DetailsPanel>
     </PageWrapper>

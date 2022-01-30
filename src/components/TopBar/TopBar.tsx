@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 import { Button } from "../Button";
 import { Icon } from "../Icon";
@@ -23,11 +24,18 @@ const BellWrapper = styled.div`
  * Renders the top bar
  */
 const TopBar: Function = () => {
+  const history = useHistory();
+
   return (
     <ToolBarWrapper>
       Hi Anakin
       <BellWrapper>
-        <Button label={'Bell'} display={'icon'} icon={<Icon icon={'k-icon-bell'} size={24} />} />
+        <Button
+          label={'Bell'}
+          display={'icon'}
+          icon={<Icon icon={'k-icon-bell'} size={24}/>}
+          onClick={() => history.push('/notifications')}
+        />
       </BellWrapper>
     </ToolBarWrapper>
   );
