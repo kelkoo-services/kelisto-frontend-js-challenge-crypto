@@ -1,24 +1,24 @@
 import React from 'react';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 import './App.css';
 import MainTheme from "./assets/themes/MainTheme";
-import TopBar from "./components/TopBar/TopBar";
-import AppWrapper from "./components/AppWrapper/AppWrapper";
-import NavBar from "./components/NavBar/NavBar";
+import { TopBar } from "./components/TopBar";
+import { AppWrapper } from "./components/AppWrapper";
+import { NavBar } from "./components/NavBar";
 import Routes from "./routes/Routes";
 
 function App() {
   return (
     <ThemeProvider theme={MainTheme}>
-      <HashRouter>
+      <BrowserRouter>
         <AppWrapper>
           <TopBar />
           <Routes />
           <NavBar />
         </AppWrapper>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
