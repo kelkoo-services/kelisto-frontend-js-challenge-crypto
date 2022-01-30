@@ -1,7 +1,7 @@
 import { screen } from "@testing-library/react";
 import React from "react";
 
-import TopBar from "../../components/TopBar";
+import { TopBar } from "../../components/TopBar";
 import { themedRender } from "../helpers/themedRender";
 
 test('renders its elements', () => {

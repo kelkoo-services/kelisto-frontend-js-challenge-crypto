@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-import PageWrapper from "../../components/PageWrapper";
-import DetailsPanel from "../../components/DetailsPanel";
+import PageWrapper from "../../components/PageWrapper/PageWrapper";
+import DetailsPanel from "../../components/DetailsPanel/DetailsPanel";
 
 /**
  * Props for the {@link UnderConstruction} component

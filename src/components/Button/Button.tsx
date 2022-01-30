@@ -1,7 +1,7 @@
 import React from "react";
-import styled, {DefaultTheme, useTheme} from "styled-components";
+import styled, { DefaultTheme, useTheme } from "styled-components";
 
-import { kindToColor, kindToTextColor } from "../utils/colorMapper";
+import { kindToColor, kindToTextColor } from "../../utils/colorMapper";
 
 /**
  * Props for the {@link Button} component

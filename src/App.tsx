@@ -4,9 +4,9 @@ import { ThemeProvider } from "styled-components";
 
 import './App.css';
 import MainTheme from "./assets/themes/MainTheme";
-import TopBar from "./components/TopBar";
-import AppWrapper from "./components/AppWrapper";
-import NavBar from "./components/NavBar";
+import TopBar from "./components/TopBar/TopBar";
+import AppWrapper from "./components/AppWrapper/AppWrapper";
+import NavBar from "./components/NavBar/NavBar";
 import Routes from "./routes/Routes";
 
 function App() {

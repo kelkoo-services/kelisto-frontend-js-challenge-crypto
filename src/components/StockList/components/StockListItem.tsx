@@ -1,10 +1,10 @@
 import React from "react";
-import styled, {DefaultTheme, useTheme} from "styled-components";
+import styled, { DefaultTheme, useTheme } from "styled-components";
 
 import { Stock } from "../../../types/stock";
 import { CurrencyFormatter } from "../../../utils/currencyFormatter";
 import { toSignedPercentage } from "../../../utils/toSignedPercentage";
-import {getCryptoLogoUrl} from "../../../utils/getCryptoLogoUrl";
+import { getCryptoLogoUrl } from "../../../utils/getCryptoLogoUrl";
 
 /**
  * Props for the {@link StockListItem} component

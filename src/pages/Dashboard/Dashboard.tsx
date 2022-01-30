@@ -5,9 +5,9 @@ import { Stock } from "../../types/stock";
 import { DashboardHeader } from ".";
 import { StockList } from "../../components/StockList";
 import { CurrencyFormatter } from "../../utils/currencyFormatter";
-import DetailsPanel from "../../components/DetailsPanel";
-import Button from "../../components/Button";
-import PageWrapper from "../../components/PageWrapper";
+import { DetailsPanel } from "../../components/DetailsPanel";
+import { Button } from "../../components/Button";
+import { PageWrapper } from "../../components/PageWrapper";
 import { getStockSummary } from "../../api/stocksApi";
 
 const DashboardDetailsWrapper = styled.div`
