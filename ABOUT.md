@@ -1,4 +1,13 @@
+# About this project
+
 This is a very simple stock/crypto app developed for the Kelisto FE Challenge.
+- [How to check the project](#how-to-check-the-project)
+- [Folder structure](#folder-structure)
+- [Framework/library](#frameworklibrary)
+- [Styling](#styling)
+- [Testing](#testing)
+- [Remarks](#remarks)
+- [Next steps](#next-steps)
 
 ## How to check the project
 Three different ways have been provided to evaluate this project:
@@ -7,11 +16,11 @@ Three different ways have been provided to evaluate this project:
 - Build and run
 
 ### Deployed application (recommended)
-The last version of this app is always deployed [here](https://kelisto-jl-acosta.netlify.app) thanks to a [GitHub Action](https://help.github.com/en/actions/getting-started-with-github-actions/about-github-actions) automated CI workflow. This is the easiest way to check the project.
+The last version of this app is always deployed [here](https://kelisto-jl-acosta.netlify.app). This is the easiest way to check the project.
 ### Development server
 Check out the repository and run `npm install` to install all dependencies. After that run `npm start` to start a dev server. Navigate to `http://localhost:3000/` in your browser.
-### Build and run
-Check out the repository and run `npm run build` to build the project. The build artifacts will be stored in the `build` directory. Go there and launch `index.html`.
+### Build and serve
+Check out the repository and run `npm run build` to build the project. The build artifacts will be stored in the `build` directory. Sites created with `create-react-app` are static, so the easiest way to serve them locally would be to use [serve](https://github.com/vercel/serve). Install it globally if you don't have it yet with `npm install -g serve` and serve the build directory with `serve -s build`. Navigate to `http://localhost:3000/` in your browser.
 
 
 ## Folder structure
@@ -91,13 +100,13 @@ The chosen method for applying styles to the app is [styled-components](https://
 ## Testing
 [![Test](https://github.com/Jodebu/kelisto-frontend-js-challenge-crypto/actions/workflows/main.yaml/badge.svg?branch=master)](https://github.com/Jodebu/kelisto-frontend-js-challenge-crypto/actions/workflows/main.yaml)
 
-Due to time restrictions, only a handful have been implemented.
+Due to time restrictions, only a handful of tests have been implemented.
 
 ## Remarks
 Some remarks I would like to state regarding this challenge:
 
 ### State management
-Even though no state management is really required for this app, I included a very simple example of what it should look like in the [Dashboard](./src/pages/Dashboard/Dashboard.tsx) component
+Even though no state management is really required for this app, I included a very simple example of what it should look like in the [Dashboard](./src/pages/Dashboard/Dashboard.tsx) component.
 ### Color token mishaps
 One of the color tokens provided (![#c4c4c4](https://via.placeholder.com/14/c4c4c4/000000?text=+) `#C4C4C4`) is slightly darker in the mocks (![#82838b](https://via.placeholder.com/14/82838b/000000?text=+) `#82838B`). I have used the one in the color tokens since it is the properly documented one.
 ### Crypto logo
