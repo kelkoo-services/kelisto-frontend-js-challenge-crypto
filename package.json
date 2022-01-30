@@ -1,7 +1,8 @@
 {
   "name": "kelisto_fe_challenge",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://jodebu.github.io/kelisto-frontend-js-challenge-crypto",
   "author": "José Luis 'Yayo' Acosta",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
@@ -13,6 +14,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-router-dom": "^5.3.3",
     "@types/styled-components": "^5.1.21",
+    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.3.0",
@@ -25,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
