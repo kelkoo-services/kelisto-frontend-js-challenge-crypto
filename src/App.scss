@@ -1,0 +1,10 @@
+@import "./assets/font.scss";
+@import "./assets/colors.scss";
+@import "./assets/border-styles.scss";
+@import "~bootstrap/scss/bootstrap";
+
+.App {
+	text-align: center;
+	background-color: $dark-blue;
+	height: 100vh;
+}
