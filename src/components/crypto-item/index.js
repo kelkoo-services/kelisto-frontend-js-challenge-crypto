@@ -13,7 +13,7 @@ const CryptoItem = ({ data }) => {
 	};
 
 	return (
-		<div key={data.id} className="item">
+		<div key={data.id} className="item" data-testid="crypto-item">
 			<span className="circle"></span>
 			<div className="crypto-data">
 				<div>

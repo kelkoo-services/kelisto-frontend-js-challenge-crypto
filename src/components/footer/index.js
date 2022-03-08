@@ -4,13 +4,13 @@ import CustomButton from "../custom-button";
 
 const Footer = ({ screen, onClick }) => {
 	return (
-		<div className="footer">
+		<div className="footer" data-testid="footer                        ">
 			<div className="row">
 				{Object.keys(MODES).map((key) => {
 					const mode = MODES[key];
 					const isActive = mode.screen === screen;
 					return (
-						<div class="col">
+						<div className="col">
 							<CustomButton
 								key={mode.screen}
 								active={isActive}

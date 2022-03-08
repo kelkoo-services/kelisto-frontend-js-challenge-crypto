@@ -5,7 +5,7 @@ const Header = () => {
 	const { t } = useTranslation();
 
 	return (
-		<div className="header">
+		<div className="header" data-testid="header">
 			<div className="content">
 				{t("hi", { name: "Anakin" })}
 				<i class="k-icon-bell"></i>

@@ -28,7 +28,9 @@ const Dashboard = () => {
 				<>
 					<div className="head">
 						<div className="title">{t("your_balance")}</div>
-						<div className="value">{formatCoin(totalValue)}</div>
+						<div className="value" data-testid="total-value">
+							{formatCoin(totalValue)}
+						</div>
 					</div>
 					<div className="content">
 						<div className="title">{t("recent")}</div>
