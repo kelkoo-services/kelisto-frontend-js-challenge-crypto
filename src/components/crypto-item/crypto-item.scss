@@ -1,11 +1,9 @@
-@import "../../assets/colors.scss";
-
 .item {
 	display: flex;
 	align-items: center;
 
 	.circle {
-		background-color: $gray;
+		background-color: var(--gray);
 		width: 35px;
 		height: 35px;
 		border-radius: 20px;
@@ -29,7 +27,7 @@
 		}
 
 		.short-name {
-			color: $gray;
+			color: var(--gray);
 		}
 
 		.variant {
@@ -39,9 +37,9 @@
 }
 
 .green {
-	color: $green;
+	color: var(--green);
 }
 
 .red {
-	color: $pink;
+	color: var(--pink);
 }

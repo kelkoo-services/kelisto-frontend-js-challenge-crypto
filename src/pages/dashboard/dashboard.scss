@@ -1,31 +1,27 @@
-@import "../../assets/font.scss";
-@import "../../assets/border-styles.scss";
-@import "../../assets/colors.scss";
-
 .dashboard {
 	height: calc(100% - 170px);
 	.head {
 		margin: 30px;
 		.title {
-			font-size: $text2;
-			color: $light-purple;
+			font-size: var(--text2);
+			color: var(--light-purple);
 		}
 		.value {
-			font-size: $text1;
-			color: $white;
+			font-size: var(--text1);
+			color: var(--white);
 		}
 	}
 
 	.content {
 		background-color: white;
-		border-top-right-radius: $border2;
-		border-top-left-radius: $border2;
+		border-top-right-radius: var(--border2);
+		border-top-left-radius: var(--border2);
 		padding: 30px;
 		position: relative;
 		height: 90%;
 
 		.title {
-			color: $gray;
+			color: var(--gray);
 			text-align: left;
 		}
 
@@ -35,9 +31,9 @@
 			width: 96vw;
 
 			button {
-				background-color: $dark-blue;
-				color: $white;
-				border-radius: $border1;
+				background-color: var(--dark-blue);
+				color: var(--white);
+				border-radius: var(--border1);
 				padding: 10px 30px;
 			}
 		}

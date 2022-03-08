@@ -1,9 +1,6 @@
-@import "../../assets/colors.scss";
-@import "../../assets/font.scss";
-
 .header {
-	color: $white;
-	font-size: $text1;
+	color: var(--white);
+	font-size: var(--text1);
 	height: 80px;
 
 	.content {
