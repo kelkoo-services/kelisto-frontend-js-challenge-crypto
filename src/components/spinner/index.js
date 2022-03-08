@@ -1,7 +1,10 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+import "./spinner.scss";
 
 const Spinner = () => {
-	return <div class="spinner-border text-primary" role="status" />;
+	const { t } = useTranslation();
+	return <div className="spinner">{t("loading")}</div>;
 };
 
 export default Spinner;
