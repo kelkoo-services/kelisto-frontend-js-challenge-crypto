@@ -8,6 +8,10 @@
 		height: 35px;
 		border-radius: 20px;
 		margin: 20px 0px;
+
+		@media screen and (max-width: 768px) {
+			height: 30px;
+		}
 	}
 
 	.crypto-data {

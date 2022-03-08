@@ -10,9 +10,8 @@ const Footer = ({ screen, onClick }) => {
 					const mode = MODES[key];
 					const isActive = mode.screen === screen;
 					return (
-						<div className="col">
+						<div className="col" key={mode.screen}>
 							<CustomButton
-								key={mode.screen}
 								active={isActive}
 								className="footer-button"
 								mode={mode}
