@@ -18,7 +18,7 @@
 		border-top-left-radius: var(--border2);
 		padding: 30px;
 		position: relative;
-		height: 90%;
+		height: 80%;
 
 		animation: 1s ease-out 0s 1 slideInFromLeft;
 
@@ -36,12 +36,19 @@
 				background-color: var(--dark-blue);
 				color: var(--white);
 				border-radius: var(--border1);
-				padding: 10px 30px;
+				padding: 16px 35px;
+				border: 1px solid var(--dark-blue);
+				font-size: var(--text3);
+				cursor: pointer;
+
+				&.disabled {
+					opacity: 0.6;
+				}
 			}
 		}
 
 		@media screen and (max-width: 768px) {
-			height: 85%;
+			height: 75%;
 
 			.transaction-container {
 				width: 90vw;

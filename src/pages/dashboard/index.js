@@ -5,6 +5,7 @@ import Spinner from "../../components/spinner";
 import "./dashboard.scss";
 import { useTranslation } from "react-i18next";
 import { formatCoin } from "../../utils";
+import classNames from "classnames";
 
 const Dashboard = () => {
 	const [cryptoData] = CryptoHook();
@@ -40,23 +41,12 @@ const Dashboard = () => {
 
 						<div className="transaction-container">
 							<button
-								class="btn"
 								type="button"
+								className={classNames({ disabled: loading })}
 								disabled={loading}
 								onClick={() => doNothing()}
 							>
-								{loading ? (
-									<>
-										<span
-											class="spinner-border spinner-border-sm"
-											role="status"
-											aria-hidden="true"
-										></span>
-										Loading...
-									</>
-								) : (
-									t("show_transactions")
-								)}
+								{loading ? t("loading") : t("show_transactions")}
 							</button>
 						</div>
 					</div>

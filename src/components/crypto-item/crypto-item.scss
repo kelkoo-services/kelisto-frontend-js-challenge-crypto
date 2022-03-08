@@ -20,13 +20,16 @@
 
 		& > div {
 			display: flex;
+			padding: 2px 0;
 		}
 
 		.name {
+			font-size: var(--text2);
 			font-weight: 500;
 		}
 
 		.value {
+			font-size: var(--text2);
 			margin-left: auto;
 		}
 
@@ -36,6 +39,7 @@
 
 		.variant {
 			margin-left: auto;
+			font-size: var(--text3);
 		}
 	}
 }
