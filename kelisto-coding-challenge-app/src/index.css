@@ -6,8 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+@font-face {
+  font-family: 'Roboto';
+  src: local('circe-regular'), url(../src/assets/fonts/Roboto-Regular.ttf) format('truetype');
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Roboto', 'Courier New',
     monospace;
 }
