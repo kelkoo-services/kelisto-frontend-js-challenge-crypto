@@ -1,0 +1,1 @@
+export const minScreenWidth = 360;
